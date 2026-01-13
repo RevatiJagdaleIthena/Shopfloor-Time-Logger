@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:reason_code",
+ "creation": "2025-12-22 16:15:00.960969",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reason_code",
+  "reason_type",
+  "reason_description",
+  "enabled_for_breakdown"
+ ],
+ "fields": [
+  {
+   "fieldname": "reason_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "reason_description",
+   "fieldtype": "Data",
+   "label": "Reason description"
+  },
+  {
+   "fieldname": "reason_type",
+   "fieldtype": "Data",
+   "label": "Reason Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled_for_breakdown",
+   "fieldtype": "Check",
+   "label": "Enabled for breakdown"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 16:15:51.427202",
+ "modified_by": "Administrator",
+ "module": "KSB pumps",
+ "name": "Reason Code",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{confirmation_number}-{work_centre}-{#####}",
+ "creation": "2025-12-29 18:38:53.540489",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jezs",
+  "operator_dashboard",
+  "work_centre",
+  "shift",
+  "confirmation_number",
+  "operator_ticket",
+  "production_order",
+  "plant",
+  "date",
+  "actual_operation_qty",
+  "total_operation_time",
+  "setup_time",
+  "downtime",
+  "reason_code",
+  "material_description",
+  "booked_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jezs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operator_dashboard",
+   "fieldtype": "Link",
+   "label": "Operator Dashboard",
+   "options": "Operator Dashboard"
+  },
+  {
+   "fieldname": "confirmation_number",
+   "fieldtype": "Data",
+   "label": "Confirmation Number"
+  },
+  {
+   "fetch_from": "operator_dashboard.production_order",
+   "fieldname": "production_order",
+   "fieldtype": "Data",
+   "label": "Production order"
+  },
+  {
+   "fieldname": "work_centre",
+   "fieldtype": "Data",
+   "label": "Work Centre"
+  },
+  {
+   "fieldname": "operator_ticket",
+   "fieldtype": "Data",
+   "label": "Operator ticket"
+  },
+  {
+   "fieldname": "actual_operation_qty",
+   "fieldtype": "Float",
+   "label": "Actual Operation Qty"
+  },
+  {
+   "fieldname": "setup_time",
+   "fieldtype": "Float",
+   "label": "Actual SetupTime (min)"
+  },
+  {
+   "fieldname": "reason_code",
+   "fieldtype": "Link",
+   "label": "Reason Code",
+   "options": "Reason Code"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "label": "Material description"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "label": "Plant"
+  },
+  {
+   "fieldname": "downtime",
+   "fieldtype": "Float",
+   "label": "Downtime Minutes"
+  },
+  {
+   "fieldname": "booked_qty",
+   "fieldtype": "Data",
+   "label": "Booked Qty"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "label": "Shift"
+  },
+  {
+   "fieldname": "total_operation_time",
+   "fieldtype": "Float",
+   "label": "Actual Operation Time (min)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-06 15:31:10.182951",
+ "modified_by": "Administrator",
+ "module": "KSB pumps",
+ "name": "Production Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

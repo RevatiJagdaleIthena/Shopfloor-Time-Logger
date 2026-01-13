@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-22 16:05:29.012381",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_booking_history",
+  "work_centre",
+  "confirmation_number",
+  "booked_qty",
+  "actual_operation_time",
+  "operation_description",
+  "setup_time",
+  "material_description",
+  "total_operation_time",
+  "operator_ticket_no",
+  "shift_name",
+  "production_log_created",
+  "actual_operation_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_booking_history",
+   "fieldtype": "Section Break",
+   "label": "User Booking History",
+   "options": "User Booking History"
+  },
+  {
+   "fieldname": "work_centre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Centre"
+  },
+  {
+   "fieldname": "booked_qty",
+   "fieldtype": "Float",
+   "label": "Booked Qty"
+  },
+  {
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Material Description"
+  },
+  {
+   "fieldname": "setup_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Setup Time (Min)"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_operation_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Operation Time (Min)"
+  },
+  {
+   "default": "0",
+   "fieldname": "production_log_created",
+   "fieldtype": "Check",
+   "label": "Production Log Created"
+  },
+  {
+   "fieldname": "confirmation_number",
+   "fieldtype": "Data",
+   "label": "Confirmation number"
+  },
+  {
+   "fieldname": "actual_operation_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Operation Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Operation Description"
+  },
+  {
+   "fieldname": "actual_operation_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Operation Time (Min)"
+  },
+  {
+   "fieldname": "operator_ticket_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Operator",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-01-08 10:38:04.638080",
+ "modified_by": "Administrator",
+ "module": "KSB pumps",
+ "name": "User Booking History",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

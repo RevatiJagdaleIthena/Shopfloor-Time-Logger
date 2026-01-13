@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:confirmation_number",
+ "creation": "2025-12-22 15:07:17.050441",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "confirmation_number",
+  "date",
+  "production_order",
+  "plant",
+  "operation_qty",
+  "std_operation_time",
+  "std_setup_time",
+  "order_work_centre",
+  "material_code",
+  "material_description",
+  "operationnumber",
+  "operation_description",
+  "alternate_work_centre",
+  "balanced_operation_qty",
+  "balance_operation_time",
+  "user_booking_history",
+  "downtime_booking_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "confirmation_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Confirmation Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "production_order",
+   "fieldtype": "Link",
+   "label": "Production Order",
+   "options": "Production Order"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "label": "Plant"
+  },
+  {
+   "fieldname": "std_operation_time",
+   "fieldtype": "Data",
+   "label": "Std Operation Time"
+  },
+  {
+   "fieldname": "std_setup_time",
+   "fieldtype": "Data",
+   "label": "Std Setup Time"
+  },
+  {
+   "fieldname": "order_work_centre",
+   "fieldtype": "Data",
+   "label": "Order Work Centre"
+  },
+  {
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "label": "Material Code"
+  },
+  {
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "label": "Material Description"
+  },
+  {
+   "fieldname": "operation_description",
+   "fieldtype": "Data",
+   "label": "Operation Description"
+  },
+  {
+   "fieldname": "alternate_work_centre",
+   "fieldtype": "Data",
+   "label": "Alternate Work Centre"
+  },
+  {
+   "fieldname": "balanced_operation_qty",
+   "fieldtype": "Data",
+   "label": "Balanced Operation Qty "
+  },
+  {
+   "fieldname": "balance_operation_time",
+   "fieldtype": "Data",
+   "label": "Balanced Operation Time"
+  },
+  {
+   "fieldname": "user_booking_history",
+   "fieldtype": "Table",
+   "label": "User Booking History",
+   "options": "User Booking History"
+  },
+  {
+   "fieldname": "downtime_booking_status",
+   "fieldtype": "Table",
+   "label": "Downtime Booking Status",
+   "options": "Downtime Booking Status"
+  },
+  {
+   "fieldname": "operation_qty",
+   "fieldtype": "Data",
+   "label": "Operation Qty"
+  },
+  {
+   "fieldname": "operationnumber",
+   "fieldtype": "Data",
+   "label": "Operation No"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-07 17:26:11.886656",
+ "modified_by": "Administrator",
+ "module": "KSB pumps",
+ "name": "Order Confirmation",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

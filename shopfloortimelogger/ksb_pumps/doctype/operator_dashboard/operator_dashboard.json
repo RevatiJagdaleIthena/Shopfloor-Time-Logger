@@ -1,0 +1,354 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{operator_ticket_no}-{work_centre}-{shift}-{#####}",
+ "creation": "2025-12-22 17:34:46.903518",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "operator_selection",
+  "column_break_djfn",
+  "operator_ticket_no",
+  "column_break_crhr",
+  "shift_name",
+  "column_break_aszg",
+  "date",
+  "column_break_arqz",
+  "confirmation_number",
+  "column_break_tqri",
+  "work_centre",
+  "section_break_taah",
+  "work_centre_banner",
+  "order_details_section",
+  "column_break_cdjz",
+  "production_order",
+  "material_code",
+  "column_break_tkua",
+  "operation_qty",
+  "material_description",
+  "status",
+  "column_break_jyjf",
+  "std_operation_time",
+  "operation_no",
+  "column_break_jrlq",
+  "std_setup_time",
+  "operation_description",
+  "column_break_byic",
+  "alt_work_centre",
+  "plant",
+  "column_break_sgvm",
+  "balanced_operation_qty",
+  "balance_operation_time",
+  "operator_input_section",
+  "actual_operation_qty",
+  "column_break_cccs",
+  "actual_operation_time",
+  "column_break_amtc",
+  "actual_setup_time",
+  "column_break_vfqs",
+  "add_entry",
+  "column_break_cowv",
+  "add_downtime",
+  "time_booking_status_section",
+  "time_booking_bar",
+  "section_break_vxod",
+  "user_booking_history",
+  "downtime_booking_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "operator_selection",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operator_ticket_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operator Ticket",
+   "options": "Operator",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_crhr",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shift",
+   "no_copy": 1,
+   "options": "Shift"
+  },
+  {
+   "fieldname": "column_break_aszg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_arqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "confirmation_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Confirmation Number",
+   "options": "Order Confirmation"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_tqri",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_centre_banner",
+   "fieldtype": "HTML",
+   "label": "Work Centre Banner"
+  },
+  {
+   "fieldname": "order_details_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cdjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "confirmation_number.production_order",
+   "fieldname": "production_order",
+   "fieldtype": "Data",
+   "label": "Production Order "
+  },
+  {
+   "fetch_from": "confirmation_number.material_code",
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "label": "Material Code"
+  },
+  {
+   "fetch_from": "confirmation_number.plant",
+   "fieldname": "plant",
+   "fieldtype": "Data",
+   "label": "Plant"
+  },
+  {
+   "fieldname": "column_break_tkua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "confirmation_number.operation_qty",
+   "fieldname": "operation_qty",
+   "fieldtype": "Data",
+   "label": "Operation Qty"
+  },
+  {
+   "fetch_from": "confirmation_number.material_description",
+   "fieldname": "material_description",
+   "fieldtype": "Data",
+   "label": "Material Description"
+  },
+  {
+   "fieldname": "work_centre",
+   "fieldtype": "Link",
+   "label": "Order Work Centre",
+   "options": "Work Centre"
+  },
+  {
+   "fieldname": "column_break_jyjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "confirmation_number.std_operation_time",
+   "fieldname": "std_operation_time",
+   "fieldtype": "Float",
+   "label": "Std Operation Time"
+  },
+  {
+   "fetch_from": "confirmation_number.operationnumber",
+   "fieldname": "operation_no",
+   "fieldtype": "Data",
+   "label": "Operation No"
+  },
+  {
+   "fieldname": "column_break_jrlq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "confirmation_number.std_setup_time",
+   "fieldname": "std_setup_time",
+   "fieldtype": "Float",
+   "label": "Std Setup Time"
+  },
+  {
+   "fetch_from": "confirmation_number.operation_description",
+   "fieldname": "operation_description",
+   "fieldtype": "Data",
+   "label": "Operation Description"
+  },
+  {
+   "fieldname": "column_break_byic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "alt_work_centre",
+   "fieldtype": "Data",
+   "label": "Alternate Work Centre"
+  },
+  {
+   "fieldname": "column_break_sgvm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "confirmation_number.balanced_operation_qty",
+   "fieldname": "balanced_operation_qty",
+   "fieldtype": "Data",
+   "label": "Balanced Operation Qty "
+  },
+  {
+   "fetch_from": "confirmation_number.balance_operation_time",
+   "fieldname": "balance_operation_time",
+   "fieldtype": "Data",
+   "label": "Balanced Operation Time"
+  },
+  {
+   "fieldname": "operator_input_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "actual_operation_qty",
+   "fieldtype": "Float",
+   "label": "Operation Qty"
+  },
+  {
+   "fieldname": "column_break_cccs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "actual_operation_time",
+   "fieldtype": "Float",
+   "label": "Actual Operation Time (Min)"
+  },
+  {
+   "fieldname": "column_break_amtc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "actual_setup_time",
+   "fieldtype": "Float",
+   "label": "Actual Setup Time (Min)"
+  },
+  {
+   "fieldname": "column_break_vfqs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "add_entry",
+   "fieldtype": "Button",
+   "label": "Add Entry"
+  },
+  {
+   "fieldname": "add_downtime",
+   "fieldtype": "Button",
+   "label": "Add M/C downtime"
+  },
+  {
+   "fieldname": "time_booking_status_section",
+   "fieldtype": "Section Break",
+   "label": "Time Booking Status"
+  },
+  {
+   "fieldname": "time_booking_bar",
+   "fieldtype": "HTML",
+   "label": "Time Booking Bar",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vxod",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_booking_history",
+   "fieldtype": "Table",
+   "label": "User Booking History",
+   "options": "User Booking History"
+  },
+  {
+   "fieldname": "downtime_booking_status",
+   "fieldtype": "Table",
+   "label": "Downtime Booking Status",
+   "options": "Downtime Booking Status"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Pending Supervisor Approval\nApproved"
+  },
+  {
+   "fieldname": "column_break_djfn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cowv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_taah",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Operator Dashboard",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-01-08 10:36:35.260738",
+ "modified_by": "Administrator",
+ "module": "KSB pumps",
+ "name": "Operator Dashboard",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
