@@ -8,6 +8,10 @@ app_email = "revatij@ithena.ai"
 app_license = "mit"
 on_session_creation = "shopfloortimelogger.auth.login_redirect"
 
+role_home_page = {
+ 	"Work centre": "/app/operator-dashboard",
+    "administrator":"/app/operator"
+}
 
 
 # Apps
@@ -16,15 +20,15 @@ on_session_creation = "shopfloortimelogger.auth.login_redirect"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "shopfloortimelogger",
-# 		"logo": "/assets/shopfloortimelogger/logo.png",
-# 		"title": "Shopfloor Time Logger",
-# 		"route": "/shopfloortimelogger",
-# 		"has_permission": "shopfloortimelogger.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "shopfloortimelogger",
+		"logo": "/assets/shopfloortimelogger/logo.png",
+		"title": "Shopfloor Time Logger",
+		"route": "/shopfloortimelogger",
+		"has_permission": "shopfloortimelogger.api.permission.has_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -62,12 +66,10 @@ on_session_creation = "shopfloortimelogger.auth.login_redirect"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+#home_page = "/app/operator-dashboard"
 
 # website user home page (by Role)
-# role_home_page = {
-# 	"Role": "home_page"
-# }
+
 
 # Generators
 # ----------
