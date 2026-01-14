@@ -5,10 +5,10 @@ def get_data():
     return [
         {
             "module_name": "Shopfloor Time Logger",
+            "category": "Modules",
             "color": "#3498db",
             "icon": "fa fa-industry",
             "type": "module",
-            "label": _("Shopfloor Time Logger"),
-            "link": "List/Operator Dashboard"
+            "label": _("Shopfloor Time Logger")
         }
     ]
